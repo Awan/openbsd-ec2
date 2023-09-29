@@ -9,8 +9,8 @@ variable "pubkey" {
 }
 
 variable "sshkey_name" {
-    description = "SSH key name"
-    default = "mysshkey"
+  description = "SSH key name"
+  default     = "mysshkey"
 }
 
 variable "ec2type" {
@@ -18,3 +18,17 @@ variable "ec2type" {
   default     = "t2.micro"
 }
 
+variable "image_id" {
+  description = "AMI ID to create ec2"
+  default     = "ami-0dc3ddca2954b9809"
+}
+
+variable "voltype" {
+  description = "root volume type"
+  default     = "gp2"
+}
+
+variable "volsize" {
+  description = "root volume size in GBs"
+  default     = 30
+}
